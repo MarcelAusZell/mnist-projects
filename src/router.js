@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import Home from './components/Pages/Home/Home.vue';
 import DigitRecognition from './components/Pages/Classification/DigitRecognition/DigitRecognition.vue';
 import LetterRecognition from './components/Pages/Classification/LetterRecognition/LetterRecognition.vue';
@@ -19,7 +19,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 });
 
